@@ -15,11 +15,18 @@ label{
 	#b1, #b2{
 		border-right: none;
 	}
-	#wrap_h2{
+	#wrap_h2, .container h2{
 		font-size: 45px;
 	}
-	#wrap_p{
+	#wrap_p, .container p{
 		font-size: 25px;
+	}
+
+	.block{
+		max-width: 70%;
+		text-align: center;
+		padding-right: 30px;
+		padding-left: 30px;
 	}
 }
 
@@ -62,4 +69,14 @@ label{
 		line-height: 1.5;
 	}
 
+@media all and (max-width: 637px){
+
+	#blocks_wrapper{
+		position: relative;
+	}
+
+	.block{
+		max-width: 100%;
+		text-align: center;
+	}
 }
