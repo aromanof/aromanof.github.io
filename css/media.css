@@ -15,18 +15,27 @@ label{
 	#b1, #b2{
 		border-right: none;
 	}
-	#wrap_h2, .container h2{
+	#wrap_h2, #banner h2{
 		font-size: 45px;
 	}
-	#wrap_p, .container p{
+	#block_footer_p2, #banner p{
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	#wrap_p{
 		font-size: 25px;
 	}
 
 	.block{
-		max-width: 70%;
+		max-width: 100%;
 		text-align: center;
 		padding-right: 30px;
 		padding-left: 30px;
+	}
+
+	#block_footer_p2{
+		text-align: justify;
 	}
 }
 
@@ -45,11 +54,17 @@ label{
 		height: 0px;
 	}
 
-	label.toggle-menu, #bars{
-		padding: 0px 10px;
-		display: inline-block;
+	label.toggle-menu{
+		position: absolute;
+		padding: 0px 15px;
+		display: inline;
 		font-size: 25px;
 		color: #f3f7ed;
+		right: 10px;
+	}
+
+	#bars{
+		padding: 0 10px;
 	}
 
 	input.toggle-menu:checked + label i{
@@ -74,9 +89,56 @@ label{
 	#blocks_wrapper{
 		position: relative;
 	}
-
+	#b1, #b2
+	{
+		padding-left: 0px;
+		padding-right:0px;
+		width: 100%;
+	}
 	.block{
-		max-width: 100%;
+		width: 100%;
 		text-align: center;
+	}
+
+	#block_footer_p2{
+		text-align: justify;
+	}
+
+	#b1 h2, #b2 h2{
+			text-align: center;
+	}
+}
+
+@media all and (max-width: 380px){
+	#banner h2, #wrap_h2{
+		font-size: 35px;
+	}
+
+	#block_footer_p2, #banner p
+	{
+		font-size: 17px;
+		line-height: 1.3;
+	}
+
+	#block_footer_p{
+		font-size: 15px;
+	}
+
+
+	#banner p{
+		line-height: 2;
+	}
+
+	#wrap_p{
+		font-size: 20px;
+	}
+
+	.logo{
+		left: 2px;
+	}
+
+	label.toggle-menu{
+		padding: 0px 0px;
+		right: 4px;
 	}
 }
